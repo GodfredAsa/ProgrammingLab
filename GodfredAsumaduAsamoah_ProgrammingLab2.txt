@@ -1,0 +1,19 @@
+/**
+ * GODFRED ASUMADU ASAMOAH
+ * PROGRAMMING LAB ASSIGNMENT 2
+ */
+public class FooCorporation {
+ 
+    public static void payCalculator(double basePay, double hoursWorked){
+        if(basePay>=8 && hoursWorked<=60){
+                double overtime =  hoursWorked - 40;
+                overtime = overtime*basePay;
+                // System.out.println("Overtime: "+overtime);
+                double salary = overtime+(40*basePay);
+                System.out.println("overtimePay=$ "+ overtime+ ", Salary=$ " +salary);
+        }
+        else {
+            System.out.println("Error");
+        }
+    }
+}
